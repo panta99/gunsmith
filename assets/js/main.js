@@ -183,7 +183,7 @@ if(url=="/gunsmith/products.html"){
                     </div>`;
         });
         if(!data.length){
-            html=`<div class="row"><div class="col-12 p-3 mb-2 bg-danger text-white text-center mt-5 fw-bold mx-2">No products found</div></div>`;
+            html=`<div class="row" id="no-products"><div class="col-12 p-3 mb-2 bg-danger text-white text-center mt-5 fw-bold mx-2">No products found</div></div>`;
         }
         $("#products").html(html);
         $(".dodajUkorpu").click(dodajUKorpu);
