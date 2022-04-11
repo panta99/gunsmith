@@ -11,7 +11,6 @@ function dohvatiPodatke(file, callback){
         },
         error: function(err){
             console.log(err);
-            console.log(url);
             alert("Error, try again later");
         }
     });
