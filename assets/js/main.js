@@ -68,7 +68,7 @@ function ispisiNav(nav){
     let brojacArtikala = parseInt(localStorage.getItem("brojArtikala"));
     let html=`<ul class="navbar-nav ms-auto">`;
         for(n of nav){
-            if(url == `/${n.href}`){
+            if(url == `/gunsmith/${n.href}`){
                 if(n.text=="Cart"){
                     html+=`<li class="nav-item text-center"><a class="nav-link active-link" href="${n.href}">${n.text}<i class="fa-solid fa-cart-shopping"><span id="brojArtikala"></span></i></li>`
                     continue;
@@ -103,7 +103,7 @@ function ukloni(){
     $("#preloader").remove();
 }
 //Home JS
-if(url=="/" || url=="/index.html"){
+if(url=="/gunsmith/" || url=="/gunsmith/index.html"){
     setTimeout(pojavljivanjeTeksa,800);
     function pojavljivanjeTeksa(){
         let opacity1 = 1;
@@ -127,7 +127,7 @@ if(url=="/" || url=="/index.html"){
     }
 }
 //Products JS
-if(url=="/products.html"){
+if(url=="/gunsmith/products.html"){
     setTimeout(ukloni,800);
     dohvatiPodatke("products",prikaziProizvode);
     //Prikazivanje kategorija
@@ -360,7 +360,7 @@ if(url=="/products.html"){
     }
     
 }
-if(url=="/order.html"){
+if(url=="/gunsmith/order.html"){
     setTimeout(ukloni,800);
     let tacnostIme = false;
     let tacnostPrezime = false;
@@ -529,7 +529,7 @@ if(url=="/order.html"){
     }
 }
 //Cart JS
-if(url=="/cart1.html"){
+if(url=="/gunsmith/cart1.html"){
     setTimeout(ukloni,800);
     let uKorpi= getItemLS("proizvodiKorpa");
     ispisiKorpu();
