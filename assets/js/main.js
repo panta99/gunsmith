@@ -3,7 +3,7 @@ let proizvodi = [];
 //AJAX zahtev
 function dohvatiPodatke(file, callback){
     $.ajax({
-        url: "/assets/data/" + file + ".json",
+        url: "/gunsmith/assets/data/" + file + ".json",
         method: "get",
         dataType: "json",
         success: function(response){
