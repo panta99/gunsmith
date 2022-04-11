@@ -3,7 +3,7 @@ let proizvodi = [];
 //AJAX zahtev
 function dohvatiPodatke(file, callback){
     $.ajax({
-        url: "/gunsmith/assets/data/" + file + ".json",
+        url: "/assets/data/" + file + ".json",
         method: "get",
         dataType: "json",
         success: function(response){
@@ -68,7 +68,7 @@ function ispisiNav(nav){
     let brojacArtikala = parseInt(localStorage.getItem("brojArtikala"));
     let html=`<ul class="navbar-nav ms-auto">`;
         for(n of nav){
-            if(url == `/gunsmith/${n.href}`){
+            if(url == `/${n.href}`){
                 if(n.text=="Cart"){
                     html+=`<li class="nav-item text-center"><a class="nav-link active-link" href="${n.href}">${n.text}<i class="fa-solid fa-cart-shopping"><span id="brojArtikala"></span></i></li>`
                     continue;
@@ -103,7 +103,7 @@ function ukloni(){
     $("#preloader").remove();
 }
 //Home JS
-if(url=="/gunsmith/" || url=="/gunsmith/index.html"){
+if(url=="/" || url=="/index.html"){
     setTimeout(pojavljivanjeTeksa,800);
     function pojavljivanjeTeksa(){
         let opacity1 = 1;
@@ -127,7 +127,7 @@ if(url=="/gunsmith/" || url=="/gunsmith/index.html"){
     }
 }
 //Products JS
-if(url=="/gunsmith/products.html"){
+if(url=="/products.html"){
     setTimeout(ukloni,800);
     dohvatiPodatke("products",prikaziProizvode);
     //Prikazivanje kategorija
@@ -183,7 +183,7 @@ if(url=="/gunsmith/products.html"){
                     </div>`;
         });
         if(!data.length){
-            html=`<div class="p-3 mb-2 bg-danger text-white text-center mt-5 fw-bold">No products found</div>`;
+            html=`<div class="row"><div class="col-12 p-3 mb-2 bg-danger text-white text-center mt-5 fw-bold mx-2">No products found</div></div>`;
         }
         $("#products").html(html);
         $(".dodajUkorpu").click(dodajUKorpu);
@@ -360,7 +360,7 @@ if(url=="/gunsmith/products.html"){
     }
     
 }
-if(url=="/gunsmith/order.html"){
+if(url=="/order.html"){
     setTimeout(ukloni,800);
     let tacnostIme = false;
     let tacnostPrezime = false;
@@ -529,7 +529,7 @@ if(url=="/gunsmith/order.html"){
     }
 }
 //Cart JS
-if(url=="/gunsmith/cart1.html"){
+if(url=="/cart1.html"){
     setTimeout(ukloni,800);
     let uKorpi= getItemLS("proizvodiKorpa");
     ispisiKorpu();
