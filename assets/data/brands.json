@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name":"CZ-USA"
+    },
+    {
+        "id":2,
+        "name":"Smith & Wesson"
+    },
+    {
+        "id":3,
+        "name":"Benelli"
+    },
+    {
+        "id":4,
+        "name":"Browning"
+    },
+    {
+        "id":5,
+        "name":"Springfield Armory"
+    }
+]

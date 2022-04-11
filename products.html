@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!--GoogleFonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=M+PLUS+1+Code:wght@500;700&family=Nunito&display=swap" rel="stylesheet">
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--JQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--Bootstrap css-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!--CSS-->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css"/>
+    <title>Gunsmith | Products</title>
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader">
+            <div class="inner">
+            </div>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg  fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand fw-bold bela" id="logo" href="index.html">GUNSMITH<img src="assets/img/logoGun.png" id="slikakodLogoa" alt="logoGun"/></a>
+                <button class="navbar-toggler navbar-toggler-right " type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    
+                    <i id="hamburger" class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav  ms-auto">
+                         <!--Ucitavanje nava iz JSON fajla-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="modal-container">
+        <div id="modal">
+            <p class="fw-bold modaltxt">Product added to cart!</p>
+            <input type="button" value="Close" class="btn crna bela" id="dugmeOk">
+        </div>
+    </div>
+    <section id="sadrzaj">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-lg-3">
+                    <div class="row">
+                       <div class="col-12">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <p class="fw-bold">Search:</p>
+                                    <input type="text" id="pretraga" name="pretraga"/>
+                                </li>
+                            </ul>
+                           <p class="fw-bold mt-3">Sort by:</p>
+                           <select class="form-select" id="sortBy">
+                                <option selected value="0">Choose</option>
+                                <option value="priceAsc">Price: High to Low</option>
+                                <option value="priceDesc">Price: Low to High</option>
+                                <option value="nameAsc">Name: A-Z</option>
+                                <option value="nameDesc">Name: Z-A</option>
+                          </select>
+                       </div> 
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-6 col-lg-12">
+                          <p class="fw-bold mt-3">Avaliable:</p>
+                        <input type="radio" name="avaliable" class="aval" id="allAv" value="all" checked/><span class="avaliable mx-2">All</span>
+                      </br>
+                          <input type="radio" name="avaliable" class="aval" id="Av" value="avaliable"/><span class="avaliable mx-2">Avaliable</span>
+                      </br>
+                          <input type="radio" name="avaliable"  class="aval" id="NAv" value="notAvaliable"/><span class="avaliable mx-2">Not Avaliable</span>
+                      </div>
+                      <div class="col-6 col-lg-12">
+                        <p class="fw-bold mt-3">Shipping:</p>
+                        <input type="radio" name="freeshipping" class="frShip" id="allFs" value="all" checked/><span class="avaliable mx-2">All</span>
+                      </br>
+                        <input type="radio" name="freeshipping" class="frShip" id="Fs" value="fS"/><span class="avaliable mx-2">Free shipping</span></br>
+                    </div>
+                      
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-lg-12">
+                            <p class="fw-bold mt-3">Categories</p>
+                            <ul class="list-group" id="categories">
+                                <!-- <li class="list-group-item">
+                                   <input type="checkbox" value="1" class="kategorija" name="kategorija"/><span class="mx-2">Handguns</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" value="1" class="kategorija" name="kategorija"/><span class="mx-2">Shotguns</span>
+                                 </li>
+                                 <li class="list-group-item">
+                                    <input type="checkbox" value="1" class="kategorija" name="kategorija"/><span class="mx-2">Rifles</span>
+                                 </li> -->
+                            </ul>
+                        </div>
+                        <div class="col-6 col-lg-12  mt-3">
+                            <p class="fw-bold">Brands</p>
+                            <ul class="list-group" id="brands">
+                                <!-- <li class="list-group-item">
+                                   <input type="checkbox" value="1" class="brend" name="brend"/><span class="mx-2">CZ-USA</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <input type="checkbox" value="1" class="brend" name="brend"/><span class="mx-2">Smith & Wesson</span>
+                                 </li>
+                                 <li class="list-group-item">
+                                    <input type="checkbox" value="1" class="brend" name="brend"/><span class="mx-2">Benelli</span>
+                                 </li>
+                                 <li class="list-group-item">
+                                    <input type="checkbox" value="1" class="brend" name="brend"/><span class="mx-2">Browning</span>
+                                 </li>
+                                 <li class="list-group-item">
+                                    <input type="checkbox" value="1" class="brend" name="brend"/><span class="mx-2">Springfield Armory</span>
+                                 </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row w-100 mb-5" id="products">
+                        
+                        <!-- <div class="col-12 col-sm-6 col-md-4 mt-2">
+                            <div class="card text-center">
+                                <img src="assets/img/products/pistol2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title fw-bold">CZ-USA Scorpion EVO 3 S1</h5>
+                                  <p>Cartridge : 357 magunm</p>
+                                  <s>1200.00</s>
+                                  <p class="crvena">999.99</span></br>
+                                    <p class="plava">Freeshipping</p>
+                                    <p >Avaliable</p>
+                                  <a href="#" class="btn crna bela dodajUkorpu">Add to cart</a>
+                                </div>
+                              </div>
+                        </div> -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container pt-4 mt-5">
+            <div class="row text-center">
+                <div class="col-12  d-flex justify-content-center">
+                    <a class="socialmedia  mx-3 bela" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="socialmedia mx-3 bela" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a class="socialmedia mx-3 bela" target="_blank" href="https://www.linkedin.com/in/aleksa-pantic-9039b5225/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="socialmedia mx-3 bela" target="_blank" href="sitemap.xml"><i class="fas fa-sitemap"></i></a>
+                    
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 text-center ">
+                    <a href="documentation.pdf" target="blank"><h4 id="documentation" class="bela">DOCUMENTATION</h4></a>
+                    <a href="https://panta99.github.io/aleksapanticportfolio/" target="blank"><h4 class="bela" id="author">AUTHOR</h4></a>
+                </div>
+                <div class="col-6 text-center">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h4 class="bela">Copyright &copy; Aleksa Pantic 102/19</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--MyJS-->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>

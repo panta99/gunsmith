@@ -1,0 +1,373 @@
+:root{
+    --bela: #ffffff;
+    --plava: rgb(0,123,255);
+    --crna: #1b1c1e;
+    --zuta : #FFE61B;
+}
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+#logo{
+    font-size:30px;
+}
+#mainNav{
+    background-color: var(--crna);
+    z-index: 4;
+}
+.bela{
+    color: var(--bela) !important;
+}
+.active-link,#logo:hover{
+    color: var(--zuta) !important;
+}
+.nav-item:hover,.nav-link:hover{
+    background-color: var(--plava) !important;
+    color: var(--bela) !important;
+}
+#hamburger{
+    color: var(--bela);
+}
+#brojArtikala{
+    vertical-align: top;
+    margin-left: 5px;
+    font-size: 15px;
+}
+#slikakodLogoa{
+    height: 35px;
+}
+#cover{
+    display: block;
+    background: url("../img/cover.jpg") no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+}
+#welcome{
+    margin-top: 50vh;
+    z-index: 3;
+}
+#welcomep{
+    font-weight: bold;
+    font-size: 35px;
+    opacity: 0;
+}
+#shopnow{
+    background-color: rgba(27,28,30,0.9);
+    height:50px;
+    align-items: center !important;
+    opacity: 0;
+}
+#shopnow >span{
+    color: var(--zuta);
+    font-size: 30px;
+    font-weight: bold;
+}
+.prekoLinka{
+    background-color: rgba(0,123,255,0.9) !important;
+}
+.ukloniPreloader{
+    animation: ukloni 600ms forwards;
+}
+@keyframes ukloni{
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+#talas{
+    margin-top: 2px;
+    position: relative;
+}
+.custom-shape-divider-bottom-1649108150 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1649108150 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 66px;
+    
+}
+
+.custom-shape-divider-bottom-1649108150 .shape-fill {
+    fill: #FFFFFF;
+}
+
+#preloader{
+    position: absolute;
+    height:100%;
+    width:100%;
+    background-color: #1b1c1e;
+    overflow: hidden;
+    z-index: 999;
+}
+  
+  .loader {
+    animation: spin 1.5s linear alternate infinite;
+    background: #FFFFFF;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+  }
+  
+  .loader:before {
+    background: #FFFFFF;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 0.5em;
+    width: 0.5em;
+    z-index: 2;
+  }
+  
+  .loader:after {
+    background: #1b1c1e;
+    border-radius: 50%;
+    box-shadow: 0em -2.60em #1b1c1e,
+      2.25em -4.02em #1b1c1e,
+      2.25em -1.25em #1b1c1e,
+      4.60em 0em #1b1c1e,
+      2.25em 1.25em #1b1c1e,
+      2.25em 4.02em #1b1c1e,
+      0em 2.60em #1b1c1e,
+      -2.25em 4.02em #1b1c1e,
+      -2.25em 1.25em #1b1c1e,
+      -4.60em 0em #1b1c1e,
+      -2.25em -1.25em #1b1c1e,
+      -2.25em -4.02em #1b1c1e;
+    content: '';
+    display: block;
+    height: 2em;
+    width: 2em;
+  }
+  
+  .inner {
+    animation: load 1.5s linear alternate infinite;
+    border: solid 1px #FFFFFF;
+    border-radius: 50%;
+    height: 1.75em;
+    width: 1.75em;
+    z-index: 1;
+  }
+  
+  .loader, .loader:before, .loader:after, .inner {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  @keyframes load {
+    0% {
+      box-shadow: 0em -2.60em #1b1c1e,
+        2.25em -1.25em #1b1c1e,
+        2.25em 1.25em #1b1c1e,
+        0em 2.60em #1b1c1e,
+        -2.25em 1.25em #1b1c1e,
+        -2.25em -1.25em #1b1c1e;
+    }
+    15% {
+      box-shadow: 0em -2.60em #1b1c1e,
+        2.25em -1.25em #1b1c1e,
+        2.25em 1.25em #1b1c1e,
+        0em 2.60em #1b1c1e,
+        -2.25em 1.25em #1b1c1e,
+        -2.25em -1.25em #FFFFFF;
+    }
+    30% {
+      box-shadow: 0em -2.60em #1b1c1e,
+        2.25em -1.25em #1b1c1e,
+        2.25em 1.25em #1b1c1e,
+        0em 2.60em #1b1c1e,
+        -2.25em 1.25em #FFFFFF,
+        -2.25em -1.25em #FFFFFF;
+    }
+    45% {
+      box-shadow: 0em -2.60em #1b1c1e,
+        2.25em -1.25em #1b1c1e,
+        2.25em 1.25em #1b1c1e,
+        0em 2.60em #FFFFFF,
+        -2.25em 1.25em #FFFFFF,
+        -2.25em -1.25em #FFFFFF;
+    }
+    60% {
+      box-shadow: 0em -2.60em #1b1c1e,
+        2.25em -1.25em #1b1c1e,
+        2.25em 1.25em #FFFFFF,
+        0em 2.60em #FFFFFF,
+        -2.25em 1.25em #FFFFFF,
+        -2.25em -1.25em #FFFFFF;
+    }
+    75% {
+      box-shadow: 0em -2.60em #1b1c1e,
+        2.25em -1.25em #FFFFFF,
+        2.25em 1.25em #FFFFFF,
+        0em 2.60em #FFFFFF,
+        -2.25em 1.25em #FFFFFF,
+        -2.25em -1.25em #FFFFFF;
+    }
+    90% {
+      box-shadow: 0em -2.60em #FFFFFF,
+        2.25em -1.25em #FFFFFF,
+        2.25em 1.25em #FFFFFF,
+        0em 2.60em #FFFFFF,
+        -2.25em 1.25em #FFFFFF,
+        -2.25em -1.25em #FFFFFF;
+    }
+    100% {
+      box-shadow: 0em -2.60em #FFFFFF,
+        2.25em -1.25em #FFFFFF,
+        2.25em 1.25em #FFFFFF,
+        0em 2.60em #FFFFFF,
+        -2.25em 1.25em #FFFFFF,
+        -2.25em -1.25em #FFFFFF;
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    15% {
+      transform: rotate(60deg);
+    }
+    30% {
+      transform: rotate(120deg);
+    }
+    45% {
+      transform: rotate(180deg);
+    }
+    60% {
+      transform: rotate(240deg);
+    }
+    75% {
+      transform: rotate(300deg);
+    }
+    90% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+#tekstAbout{
+    font-size: 40px;
+}
+#drugiTekst{
+    font-size:25px;
+}
+footer{
+  display: block;
+  background-color: var(--crna);
+}
+.socialmedia{
+  font-size:30px !important;
+}
+.socialmedia:hover, #documentation:hover, #author:hover{
+  color: var(--plava) !important;
+}
+#sadrzaj{
+  padding-top: 150px;
+  display: block;
+}
+#list-group{
+  border: none !important;
+}
+#pretraga{
+  width:100%;
+}
+.crna{
+  background-color:var(--crna);
+}
+.crvena{
+  color: #ff0000;
+}
+.plava{
+  color: var(--plava);
+}
+.dodajUkorpu:hover{
+  background-color: var(--plava);
+}
+#modal-container{
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.4);
+  top:0;
+  left:0;
+  opacity: 0;
+  position: fixed;
+  height:100vh;
+  width: 100vw;
+}
+#modal{
+  background-color: #fff;
+  width:600px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  padding: 30px 50px;
+  max-width: 80%;
+  text-align: center;
+}
+.modaltxt{
+  font-size: 25px;
+}
+#dugmeOk{
+  width:50%;
+  font-size: 20px;
+}
+#modal-container.show{
+  opacity: 1;
+}
+#korpaProizvodi{
+  box-sizing: border-box;
+  padding-top:110px;
+  min-height: 82vh;
+}
+.kolicina{
+  width:100px;
+}
+#formular{
+  padding-top: 100px;
+  min-height: 82vh;
+}
+#forma{
+  border: 2px solid var(--crna);
+}
+#forma>input[type=text],#forma>select{
+  text-align: center;
+  height: 45px;
+  width: 80%;
+  border: 2px solid var(--crna);
+}
+#forma>select{
+  text-align: center;
+}
+.greska{
+  color: #ff0000;
+}
+#naruci1{
+  width:50%;
+  font-size: 20px;
+}
+.sakrij{
+  visibility: hidden;
+}

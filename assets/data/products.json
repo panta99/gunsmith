@@ -1,0 +1,206 @@
+[
+    {
+        "id":1,
+        "name" :"CZ-USA Shadow 2",
+        "brandId":1,
+        "categorieId":1,
+        "price":{
+                "oldPrice":null,
+                "newPrice": "1599.00"
+            },
+        "freeShiping":true,
+        "available":true,
+        "cartridge": "9mm",
+        "img":{
+            "src":"pistol1.jpg",
+            "alt":"Cz usa Shadow2 handgun"
+        }
+    },
+    {
+        "id":2,
+        "name" :"CZ-USA Scorpion EVO 3 S1",
+        "brandId":1,
+        "categorieId":1,
+        "price":{
+                "oldPrice":"1200.00",
+                "newPrice": "999.99"
+            },
+        "freeShiping":true,
+        "available":true,
+        "cartridge": "9mm",
+        "img":{
+            "src":"pistol2.jpg",
+            "alt":"CZ USA Scorpion Evo"
+        }
+    },
+    {
+        "id":3,
+        "name" :"Smith & Wesson Model 686 Revolver",
+        "brandId":2,
+        "categorieId":1,
+        "price":{
+                "oldPrice":"1200.00",
+                "newPrice": "999.99"
+            },
+        "freeShiping":false,
+        "available":false,
+        "cartridge": "357 magnum",
+        "img":{
+            "src":"pistol3.jpg",
+            "alt":"Smith & Wesson Model 686 Revolver"
+        }
+    },
+    {
+        "id":4,
+        "name" :"Smith & Wesson M&P 22 Compact",
+        "brandId":2,
+        "categorieId":1,
+        "price":{
+                "oldPrice":null,
+                "newPrice": "429.00"
+            },
+        "freeShiping":false,
+        "available":true,
+        "cartridge": "22 LR",
+        "img":{
+            "src":"pistol4.jpg",
+            "alt":"Smith & Wesson M&P 22 Compact"
+        }
+    },
+    {
+        "id":5,
+        "name" :"Benelli Super Black Eagle 3 Shotgun",
+        "brandId":3,
+        "categorieId":2,
+        "price":{
+                "oldPrice":"1899.00",
+                "newPrice": "1599.00"
+            },
+        "freeShiping":true,
+        "available":false,
+        "cartridge": "20 Gauge",
+        "img":{
+            "src":"shotgun1.jpg",
+            "alt":"Benelli Super Black Eagle 3 Shotgun"
+        }
+    },
+    {
+        "id":6,
+        "name" :"Benelli M4 Tactical Shotgun",
+        "brandId":3,
+        "categorieId":2,
+        "price":{
+                "oldPrice":"2099.00",
+                "newPrice": "1899.00"
+            },
+        "freeShiping":true,
+        "available":true,
+        "cartridge": "12 Gauge",
+        "img":{
+            "src":"shotgun2.jpg",
+            "alt":"Benelli Super Black Eagle 3 Shotgun"
+        }
+    },
+    {
+        "id":7,
+        "name" :"Browning Citori Hunter Grade I Over/Under Shotgun",
+        "brandId":4,
+        "categorieId":2,
+        "price":{
+                "oldPrice":null,
+                "newPrice": "1999.99"
+            },
+        "freeShiping":true,
+        "available":false,
+        "cartridge": "16 Gauge",
+        "img":{
+            "src":"shotgun3.jpg",
+            "alt":"Browning Citori Hunter Grade I Over/Under Shotgun"
+        }
+    },
+    {
+        "id":8,
+        "name" :"Browning Silver Field Composite Shotgun",
+        "brandId":4,
+        "categorieId":2,
+        "price":{
+                "oldPrice":"1269.99",
+                "newPrice": "1099.99"
+            },
+        "freeShiping":true,
+        "available":false,
+        "cartridge": "12 Gauge",
+        "img":{
+            "src":"shotgun4.jpg",
+            "alt":"Browning Citori Hunter Grade I Over/Under Shotgun"
+        }
+    },
+    {
+        "id":9,
+        "name" :"Springfield Armory Saint Victor Rifle",
+        "brandId":5,
+        "categorieId":3,
+        "price":{
+                "oldPrice":"1217.99",
+                "newPrice": "1099.99"
+            },
+        "freeShiping":true,
+        "available":true,
+        "cartridge": "5.56x45mm",
+        "img":{
+            "src":"rifle1.jpg",
+            "alt":"Browning Citori Hunter Grade I Over/Under Shotgun"
+        }
+    },
+    {
+        "id":10,
+        "name" :"Springfield Armory Model 2020 Waypoint Bolt Action Rifle",
+        "brandId":5,
+        "categorieId":3,
+        "price":{
+                "oldPrice":null,
+                "newPrice": "2529.99"
+            },
+        "freeShiping":true,
+        "available":true,
+        "cartridge": "7.62x51mm",
+        "img":{
+            "src":"rifle1.jpg",
+            "alt":"Springfield Armory Model 2020 Bolt Action Rifle"
+        }
+    },
+    {
+        "id":11,
+        "name" :"Smith & Wesson M&P 10",
+        "brandId":2,
+        "categorieId":3,
+        "price":{
+                "oldPrice":null,
+                "newPrice": "1659.99"
+            },
+        "freeShiping":true,
+        "available":true,
+        "cartridge": ".308 Winchester",
+        "img":{
+            "src":"rifle3.jpg",
+            "alt":"Springfield Armory Model 2020 Waypoint Adjustable Stock Bolt Action Rifle"
+        }
+    },
+    {
+        "id":12,
+        "name" :"CZ-USA 600 Alpha Bolt Action",
+        "brandId":2,
+        "categorieId":3,
+        "price":{
+                "oldPrice":null,
+                "newPrice": "749.00"
+            },
+        "freeShiping":true,
+        "available":true,
+        "cartridge": ".308 Winchester",
+        "img":{
+            "src":"rifle3.jpg",
+            "alt":"CZ-USA 600 Alpha Bolt Action"
+        }
+    }
+]

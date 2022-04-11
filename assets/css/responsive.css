@@ -1,0 +1,97 @@
+@media screen and (max-width: 1024px){
+    #drugiTekst{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 992px) {
+    #drugiTekst{
+        order: 2 !important;
+        margin-top: 30px !important;
+    }
+    #drugaSlika{
+        order: 1 !important;
+    }
+    
+}
+@media screen and (max-width: 769px) {
+    #cover{
+        height:70vh;
+    }
+    #welcome{
+        margin-top:35vh;
+    }
+    #aboutus{
+        margin-top: -5px !important;
+    }
+}
+@media screen and (max-width: 426px) {
+    .aval + span{
+        font-size: 14px !important;
+    }
+    .frShip + span{
+        font-size: 14px !important;
+    }
+#welcomep{
+    font-size: 25px;
+}
+#shopnow{
+    height:40px;
+}
+#shopnow >span{
+    font-size: 20px;
+    font-weight: bold;
+}
+#tekstAbout{
+    font-size: 30px;
+}
+#aboutus{
+    margin-top: -5px !important;
+}
+.kategorija +span{
+    font-size:15px !important;
+  }
+.brend + span{
+    font-size:15px !important;
+}
+.modaltxt{
+    font-size: 20px;
+  }
+#dugmeOk{
+    font-size: 20px;
+  }
+  .kolicina{
+    width:60px;
+  }
+.greska{
+    font-size: 15px;
+}
+}
+@media screen and (max-width: 376px) {
+    .aval + span{
+        font-size: 14px !important;
+    }
+    .frShip + span{
+        font-size: 14px !important;
+    }
+    #welcomep{
+        font-size: 20px;
+    }
+    #shopnow >span{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .modaltxt{
+        font-size: 15px;
+      }
+      #dugmeOk{
+        font-size: 15px;
+      }
+    }
+@media screen and (max-width: 335px) {
+    .kategorija +span{
+        font-size:13px !important;
+      }
+    .brend + span{
+        font-size:13px !important;
+    }
+}

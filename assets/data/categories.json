@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name":"Handguns"
+    },
+    {
+        "id": 2,
+        "name":"Shotguns"
+    },
+    {
+        "id": 3,
+        "name":"Rifles"
+    }
+]
