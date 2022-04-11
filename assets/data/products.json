@@ -165,7 +165,7 @@
         "available":true,
         "cartridge": "7.62x51mm",
         "img":{
-            "src":"rifle1.jpg",
+            "src":"rifle2.jpg",
             "alt":"Springfield Armory Model 2020 Bolt Action Rifle"
         }
     },
@@ -199,7 +199,7 @@
         "available":true,
         "cartridge": ".308 Winchester",
         "img":{
-            "src":"rifle3.jpg",
+            "src":"rifle4.jpg",
             "alt":"CZ-USA 600 Alpha Bolt Action"
         }
     }
