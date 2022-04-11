@@ -10,8 +10,7 @@
     }
     #drugaSlika{
         order: 1 !important;
-    }
-    
+    } 
 }
 @media screen and (max-width: 769px) {
     #cover{
@@ -22,6 +21,9 @@
     }
     #aboutus{
         margin-top: -5px !important;
+    }
+    #no-products{
+        margin-left: 5% !important;
     }
 }
 @media screen and (max-width: 426px) {
