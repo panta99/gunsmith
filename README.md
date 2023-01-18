@@ -1,1 +1,1 @@
-# Online gunsmith store. My secound JavaScript project. 
+# Online gunsmith store. My second responsive site.
